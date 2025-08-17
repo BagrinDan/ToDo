@@ -1,0 +1,84 @@
+using System;
+
+namespace Classes{
+    /// <summary>
+    ///      /// This class is responding for UI part of TODO
+    /// </summary>
+    public class ToDoUI{ 
+        /// <summary>
+        /// Main part of programm. It start infinit loop with options
+        /// </summary>
+                
+        public void menu(){
+
+            int userInput = 0;
+
+            do{
+                // Print menu options
+                PrintOptions();
+
+                // User input for options
+                userInput = menuInput();
+
+                // Choose option via user input
+                chooseOption(userInput);
+
+                } while (userInput != 0);
+        }
+
+        /// <summary>
+        /// Prints all options
+        /// </summary>
+        public void PrintOptions(){
+            Console.WriteLine("Choose option:");
+            Console.WriteLine("1. Create list");
+            Console.WriteLine("2. Remove list");
+            Console.WriteLine("3. Mark as complete");
+            Console.WriteLine("4. Edit");
+            Console.WriteLine("0. Exit");
+        }
+
+        /// <summary>
+        /// Takes user input for options
+        /// </summary>
+        /// <param name="userInput"> Number of option. </param>
+        public void chooseOption(int userInput){
+
+            switch(userInput){
+                case 1:
+                    // CREATE
+                    break;
+                case 2:
+                    // REMOVE
+                    break;
+                case 3:
+                    // MARK
+                    break;
+                case 4:
+                    // EDIT
+                    break;
+                case 0:
+                    Console.WriteLine("Exiting...");
+                    break;
+                default:
+                    Console.WriteLine("Wrong option");
+                    break;
+                    
+            }
+        }
+
+        /// <summary>
+        /// Gets and validate user input
+        /// </summary>1
+        public int menuInput(){
+            while(true){
+                string rawInput = Console.ReadLine();
+                if(int.TryParse(rawInput, out int userInput)){
+                    return userInput;
+                }
+                    Console.WriteLine("Enter valid number");
+            }
+                
+        }
+    }         
+}
