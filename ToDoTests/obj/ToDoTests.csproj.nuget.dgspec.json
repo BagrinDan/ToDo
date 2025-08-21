@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/scooperlosses/CSharp/Todo/Todo.csproj": {}
+    "/home/scooperlosses/CSharp/Todo/ToDoTests/ToDoTests.csproj": {}
   },
   "projects": {
-    "/home/scooperlosses/CSharp/Todo/Todo.csproj": {
+    "/home/scooperlosses/CSharp/Todo/ToDoTests/ToDoTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scooperlosses/CSharp/Todo/Todo.csproj",
-        "projectName": "Todo",
-        "projectPath": "/home/scooperlosses/CSharp/Todo/Todo.csproj",
+        "projectUniqueName": "/home/scooperlosses/CSharp/Todo/ToDoTests/ToDoTests.csproj",
+        "projectName": "ToDoTests",
+        "projectPath": "/home/scooperlosses/CSharp/Todo/ToDoTests/ToDoTests.csproj",
         "packagesPath": "/home/scooperlosses/.nuget/packages/",
-        "outputPath": "/home/scooperlosses/CSharp/Todo/obj/",
+        "outputPath": "/home/scooperlosses/CSharp/Todo/ToDoTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scooperlosses/.nuget/NuGet/NuGet.Config"
@@ -46,15 +46,19 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.14.1, )"
+              "version": "[17.12.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.9.3, )"
+              "version": "[2.9.2, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[2.8.2, )"
             }
           },
           "imports": [

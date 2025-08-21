@@ -1,14 +1,6 @@
-/home/scooperlosses/CSharp/Todo/bin/Debug/net9.0/Todo
-/home/scooperlosses/CSharp/Todo/bin/Debug/net9.0/Todo.deps.json
-/home/scooperlosses/CSharp/Todo/bin/Debug/net9.0/Todo.runtimeconfig.json
-/home/scooperlosses/CSharp/Todo/bin/Debug/net9.0/Todo.dll
-/home/scooperlosses/CSharp/Todo/bin/Debug/net9.0/Todo.pdb
+/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.csproj.AssemblyReference.cache
 /home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.GeneratedMSBuildEditorConfig.editorconfig
 /home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.AssemblyInfoInputs.cache
 /home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.AssemblyInfo.cs
 /home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.csproj.CoreCompileInputs.cache
-/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.dll
-/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/refint/Todo.dll
-/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.pdb
-/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.genruntimeconfig.cache
-/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/ref/Todo.dll
+/home/scooperlosses/CSharp/Todo/obj/Debug/net9.0/Todo.sourcelink.json
