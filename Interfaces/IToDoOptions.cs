@@ -3,6 +3,6 @@ using Models;
 
 namespace Interfaces{
     public interface IToDoOptions{
-        void executeOption(TaskModel model);
+        void executeOption();
     }
 }

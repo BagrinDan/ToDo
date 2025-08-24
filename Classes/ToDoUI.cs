@@ -1,15 +1,22 @@
 using System;
+using Interfaces;
+using Options;
 
 namespace Classes{
     /// <summary>
     /// This class is responding for UI part of TODO
     /// </summary>
-    public class ToDoUI{ 
-        /// <summary>
-        /// Main part of programm. It start infinit loop with options
-        /// </summary>
+    public class ToDoUI : IToDoUI{
+        
+        IToDoOptions _toDoOptions;
+        ITaskRepo _taskRepo;
+        IUserInput _userInput;
+        
+        public ToDoUI(IToDoOptions _toDoOptions){
+            this._toDoOptions = _toDoOptions;
+        }
                 
-        public void menu(){
+        public void executeMenu(){
 
             int userInput = 0;
 
@@ -34,7 +41,8 @@ namespace Classes{
             Console.WriteLine("1. Create list");
             Console.WriteLine("2. Remove list");
             Console.WriteLine("3. Mark as complete");
-            Console.WriteLine("4. Edit");
+            Console.WriteLine("4. Print all tasks");
+            Console.WriteLine("5. Edit");
             Console.WriteLine("0. Exit");
         }
 
@@ -47,6 +55,7 @@ namespace Classes{
             switch(userInput){
                 case 1:
                     // CREATE
+                    new CreateTask(_taskRepo, _userInput).executeOption();
                     break;
                 case 2:
                     // REMOVE
@@ -55,6 +64,10 @@ namespace Classes{
                     // MARK
                     break;
                 case 4:
+                    // PRINT
+                    new PrintTasks(_taskRepo, _userInput).executeOption();
+                    break;
+                case 5:
                     // EDIT
                     break;
                 case 0:
